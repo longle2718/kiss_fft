@@ -1,3 +1,5 @@
+#ifndef _KISS_FFT_GUTS_H
+#define _KISS_FFT_GUTS_H
 /*
 Copyright (c) 2003-2010, Mark Borgerding
 
@@ -161,4 +163,6 @@ struct kiss_fft_state{
 #else
 #define  KISS_FFT_TMP_ALLOC(nbytes) KISS_FFT_MALLOC(nbytes)
 #define  KISS_FFT_TMP_FREE(ptr) KISS_FFT_FREE(ptr)
+#endif
+
 #endif
